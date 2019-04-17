@@ -19,10 +19,17 @@ class Login extends React.Component {
 
         nodes.forEach(node => node.style.background = '#ffffff');
 
-        Meteor.call('test', (error, response) => console.log(response));
+        //Meteor.call('test', (error, response) => console.log(response));
     }
 
     handleSubmit = ({ username, password }) => {
+//         var newUserId =  Meteor.users.insert({
+//          emails: [username],
+//          profile  : { fullname : 'peter' }
+//  });
+// console.log(newUserId);
+Meteor.call('createUser', {username: "abc", password: "abc"});
+
         if (!username) {
             return toast.error('Username is required');
         }

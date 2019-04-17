@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import MainLayout from '../../ui/containters/MainLayout';
 
 Meteor.startup(() => {
+    console.log('session timeout');
     //session timeout
     var heartbeatInterval = 60 * 1000; // 1min
     var activityEvents = 'mousemove click keydown';
@@ -43,9 +44,9 @@ Meteor.startup(() => {
 
 
     //method for capitalizing strings
-    String.prototype.capitalize = function () {
-        return this.charAt(0).toUpperCase() + this.slice(1);
-    };
-
+    // String.prototype.capitalize = function () {
+    //     return this.charAt(0).toUpperCase() + this.slice(1);
+    // };
+    console.log('MainLayout');
     ReactDOM.render(<MainLayout />, document.getElementById('root'));
 });

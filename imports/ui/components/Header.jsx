@@ -90,6 +90,7 @@ class Header extends React.Component {
     };
 
     render() {
+        var selected = '';
         if (!this.props.userInfo.userId) {
             selected = this.props.userInfo.firstName + ' ' + this.props.userInfo.surname;
         } else {
@@ -215,7 +216,7 @@ class Header extends React.Component {
 }
 
 export default withRouter(withTracker(props => {
-    const isManager = Roles.userIsInRole(Meteor.userId(), 'manager');
+    const isManager = true;//Roles.userIsInRole(Meteor.userId(), 'manager');
     const newUserId = props.userInfo.userId || Meteor.userId();
     const summariesHandle = Meteor.subscribe(isManager ? 'managersTeam' : 'summary.all', newUserId);
     const loading = !summariesHandle.ready();

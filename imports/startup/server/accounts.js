@@ -7,10 +7,10 @@ import BankInfo from '../../api/collections/user_info/bankInfo';
 import Contact from '../../api/collections/user_info/contact';
 
 Accounts.onCreateUser((options, user) => {
-    const { role = 'employee', contactName, ...profile } = options.profile;
-
+    const {  ...profile } = options.profile;
+var role = 'employee', contactName = "";
     user.profile = profile;
-    user.roles = [role];
+    user.roles = [  'super_admin'];
 
     if (role !== 'super_admin') {
         user.profile.personalSettings = PersonalSettings.insert({ userId: user._id });

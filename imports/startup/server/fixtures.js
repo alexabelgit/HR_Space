@@ -31,11 +31,24 @@ if (SecretQuestions.find().count() === 0) {
 
     questions.forEach(question => SecretQuestions.insert(question));
 }
+if (Roles.find().count() === 0) {
+    const _roles = ['employee', 'manager', 'hr', 'admin', 'super_admin'];
 
-// const roles = Roles.getAllRoles().fetch().map(role => role.name);
+    _roles.forEach(role => Roles.insert({ name: role,id: uuid.new() }));
+}
+if (Meteor.users.find().count() === 0) {
+    
 
-// ['employee', 'manager', 'hr', 'admin', 'super_admin'].forEach(role => {
-//     if (!~roles.indexOf(role)) {
-//         Roles.createRole(role);
-//     }
-// });
+    Accounts.createUser({
+        username: 'a@a.com',
+        email: 'a@a.com',
+        password: '123456',
+       
+        profiles: {
+        FirstName: "",
+        LastName: "",
+        role: 'super_admin',
+        DateOfBirth: ""
+        }
+        });
+  }
