@@ -5,6 +5,7 @@ import { DropdownButton, MenuItem, HelpBlock, Modal, Button } from 'react-bootst
 import classnames from 'classnames';
 
 import Summary from '../../api/collections/user_info/summary';
+import { Roles } from 'meteor/alanning:roles';
 
 class EmployeesDropdown extends React.Component {
     constructor(props) {

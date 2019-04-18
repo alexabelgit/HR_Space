@@ -11,6 +11,7 @@ import SmartCustomSelect from '../components/SmartCustomSelect';
 import ContentPagesCollection from '../../api/collections/contentPages';
 import BusinessesCollection from '../../api/collections/businesses';
 import { toast } from 'react-toastify';
+import { Roles } from 'meteor/alanning:roles';
 
 class ContentPages extends React.Component {
     constructor(props) {
@@ -32,7 +33,7 @@ class ContentPages extends React.Component {
     openContentPageForm = event => {
         event.preventDefault();
 
-        // const isSuperAdmin = Roles.userIsInRole(Meteor.userId(), 'super_admin');
+         const isSuperAdmin = Roles.userIsInRole(Meteor.userId(), 'super_admin');
 
         this.setState({
             contentPageForm: {
@@ -42,8 +43,8 @@ class ContentPages extends React.Component {
                 article: '',
                 isActive: true,
                 visibleFor: 'all',
-                // business: isSuperAdmin ? '' : Meteor.user().profile.businessId
-                business: ''
+                 business: isSuperAdmin ? '' : Meteor.user().profile.businessId
+               // business: ''
             }
         });
     }

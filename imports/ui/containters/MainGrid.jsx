@@ -5,7 +5,8 @@ import { withRouter } from 'react-router-dom';
 
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
-import Roles from '../../api/collections/roles';
+//import Roles from '../../api/collections/roles';
+import { Roles } from 'meteor/alanning:roles';
 
 class MainGrid extends React.Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class MainGrid extends React.Component {
     }
 
     render() {
-        var userRole = "super_admin";//Roles.getRolesForUser(Meteor.userId())[0];
+        var userRole = Roles.getRolesForUser(Meteor.userId())[0];
 
         const { userInfo, onUserInfoChange } = this.props;
 

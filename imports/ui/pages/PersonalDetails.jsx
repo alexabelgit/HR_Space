@@ -15,7 +15,7 @@ import CompensationForm from '../components/forms/user_info/CompensationForm';
 import PersonalSettings from '../components/forms/user_info/PersonalSettings';
 import HRDocuments from './HRDocuments';
 import ManagerPermissions from '../../api/collections/managementRoles';
-
+import { Roles } from 'meteor/alanning:roles';
 class PersonalDetails extends React.Component {
     constructor(props) {
         super(props);

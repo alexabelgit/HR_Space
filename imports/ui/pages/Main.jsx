@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 import classnames from 'classnames';
 import { toast, ToastContainer } from 'react-toastify';
-import { Roles } from 'meteor/alanning:roles'
 
 import FlexDiv from '../components/FlexDiv';
 import MainMenuItem from '../components/MainMenuItem';
@@ -17,6 +16,9 @@ import Alert from '../components/Alert';
 
 import Announcements from '../../api/collections/announcements';
 import Tasks from '../../api/collections/tasks';
+
+import { Roles } from 'meteor/alanning:roles';
+
 const meteorCall = (methodName, ...args) => new Promise((resolve, reject) => {
     Meteor.call(methodName, ...args, (error, response) => {
         if (error) reject(error.reason);

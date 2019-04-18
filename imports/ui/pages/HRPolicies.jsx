@@ -45,7 +45,7 @@ class HRPolicies extends React.Component {
     openPolicyForm(event) {
         event.preventDefault();
 
-        // const isSuperAdmin = Roles.userIsInRole(Meteor.userId(), 'super_admin');
+        const isSuperAdmin = Roles.userIsInRole(Meteor.userId(), 'super_admin');
 
         this.setState({
             policyForm: {
@@ -55,8 +55,8 @@ class HRPolicies extends React.Component {
                 details: '',
                 isActive: true,
                 access: 'all',
-                // business: isSuperAdmin ? '' : Meteor.user().profile.businessId,
-                business: '',
+                 business: isSuperAdmin ? '' : Meteor.user().profile.businessId,
+                //business: '',
             }
         });
     }

@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import { Grid, Row, Col, Alert } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
-import { Roles } from 'meteor/alanning:roles'
+import { Roles } from 'meteor/alanning:roles';
 
 import LoginForm from '../components/forms/LoginForm';
 

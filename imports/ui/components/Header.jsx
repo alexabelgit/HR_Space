@@ -10,6 +10,7 @@ import EmployeesDropdown from './EmployeesDropdown'
 import FieldGroup from './FieldGroup';
 
 import Summary from '../../api/collections/user_info/summary';
+import { Roles } from 'meteor/alanning:roles';
 
 class Header extends React.Component {
     constructor(props) {
@@ -216,7 +217,7 @@ class Header extends React.Component {
 }
 
 export default withRouter(withTracker(props => {
-    const isManager = true;//Roles.userIsInRole(Meteor.userId(), 'manager');
+    const isManager = Roles.userIsInRole(Meteor.userId(), 'manager');
     const newUserId = props.userInfo.userId || Meteor.userId();
     const summariesHandle = Meteor.subscribe(isManager ? 'managersTeam' : 'summary.all', newUserId);
     const loading = !summariesHandle.ready();

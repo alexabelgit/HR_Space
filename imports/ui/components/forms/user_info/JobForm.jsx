@@ -19,6 +19,7 @@ import WorkingPatterns from '../../../../api/collections/workingPatterns';
 import Job from '../../../../api/collections/user_info/job';
 import Summary from '../../../../api/collections/user_info/summary';
 import ManagerPermissions from '../../../../api/collections/managementRoles';
+import { Roles } from 'meteor/alanning:roles';
 
 const accesses = ['Admin', 'Employee', 'Hr', 'Manager'];
 

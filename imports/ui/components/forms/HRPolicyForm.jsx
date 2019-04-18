@@ -10,7 +10,7 @@ import CustomSwitch from '../CustomSwitch';
 import CustomEditor from '../CustomEditor';
 
 import { ImagesStore } from '../../../api/collections/images';
-
+import { Roles } from 'meteor/alanning:roles';
 const propTypes = {
     businesses: PropTypes.arrayOf(PropTypes.object).isRequired,
     policy: PropTypes.object.isRequired,

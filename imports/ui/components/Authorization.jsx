@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import { Roles } from 'meteor/alanning:roles'
+import { Roles } from 'meteor/alanning:roles';
 
 export const Authorization = (allowedRoles) => (WrappedComponent, componentProps) => {
     return class WithAuthorization extends React.Component {

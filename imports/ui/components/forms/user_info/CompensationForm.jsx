@@ -24,6 +24,7 @@ import BenefitDetailsForm from './BenefitDetailsForm';
 import BenefitsInKindForm from './BenefitsInKindForm';
 import Summary from '../../../../api/collections/user_info/summary';
 import ManagerPermissions from '../../../../api/collections/managementRoles';
+import { Roles } from 'meteor/alanning:roles';
 
 class CompensationForm extends React.Component {
     constructor(props) {

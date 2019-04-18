@@ -10,7 +10,7 @@ Accounts.onCreateUser((options, user) => {
     const {  ...profile } = options.profile;
 var role = 'employee', contactName = "";
     user.profile = profile;
-    user.roles = [  'super_admin'];
+    user.roles = [ role];
 
     if (role !== 'super_admin') {
         user.profile.personalSettings = PersonalSettings.insert({ userId: user._id });
