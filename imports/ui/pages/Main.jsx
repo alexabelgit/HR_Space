@@ -158,9 +158,9 @@ class Main extends React.Component {
     }
 
     render() {
-        const isEmployee = false;//Roles.userIsInRole(Meteor.userId(), 'employee');
-        const isManager = true;// Roles.userIsInRole(Meteor.userId(), 'manager');
-        const isHr = false;//Roles.userIsInRole(Meteor.userId(), 'hr');
+        const isEmployee = Roles.userIsInRole(Meteor.userId(), 'employee');
+        const isManager = Roles.userIsInRole(Meteor.userId(), 'manager');
+        const isHr = Roles.userIsInRole(Meteor.userId(), 'hr');
 
         return (
             <Grid className='main' style={{ paddingTop: '20px' }} fluid>
