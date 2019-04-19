@@ -9,7 +9,7 @@ import DateInput from '../DateInput';
 const employeesCount = ['1-5', '6-10', '11-15', '16-20', '21-25'];
 const paymentFrequencies = ['Per year', 'Per month'];
 const statuses = ['Live', 'Expired', 'Trial', 'Trial ended'];
-
+const permissions = ['employee', 'manager', 'hr', 'admin', 'super_admin'];
 class UserAccountForm extends React.Component {
     constructor(props) {
         super(props);
@@ -29,6 +29,7 @@ class UserAccountForm extends React.Component {
             startDate: props.business.startDate || '',
             endDate: props.business.endDate || '',
             price: props.business.price || '',
+            roles: props.roles || '',
             paymentFrequency: props.business.paymentFrequency ? props.business.paymentFrequency.capitalize() : '',
             status: props.business.status ? props.business.status.split('_').join(' ').capitalize() : '',
             bankAccountNumber: props.business.bank ? props.business.bank.accountNumber : '',
@@ -74,6 +75,7 @@ class UserAccountForm extends React.Component {
 
         var newBusiness = {
             _id: this.state._id,
+            roles: this.state.roles,
             name: this.state.name,
             address: this.state.addressLine1 + '\n' + this.state.addressLine2,
             city: this.state.city,
@@ -295,6 +297,17 @@ class UserAccountForm extends React.Component {
                                             value={this.state.status}
                                             options={statuses}
                                             onSelect={value => this.handleOnSelect(value, 'status')}
+                                        />
+                                    </Col>
+                                </FormGroup>
+                                <FormGroup bsSize='lg' controlId='permission'>
+                                    <Col componentClass={ControlLabel} smOffset={1} sm={5}>Permission</Col>
+                                    <Col sm={5}>
+                                        <CustomSelect
+                                            id='permission'
+                                            value={this.state.roles}
+                                            options={permissions}
+                                            onSelect={value => this.handleOnSelect(value, 'roles')}
                                         />
                                     </Col>
                                 </FormGroup>
