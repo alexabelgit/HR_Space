@@ -1,0 +1,146 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "01eb2ecc3f788be6f3c165ee4143cea1a30d4a0b.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/01eb2ecc3f788be6f3c165ee4143cea1a30d4a0b.js?meteor_js_resource=true",
+      "size": 3277162,
+      "hash": "01eb2ecc3f788be6f3c165ee4143cea1a30d4a0b"
+    },
+    {
+      "path": "01eb2ecc3f788be6f3c165ee4143cea1a30d4a0b.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/01eb2ecc3f788be6f3c165ee4143cea1a30d4a0b.stats.json?meteor_js_resource=true",
+      "size": 68817,
+      "hash": "ce88567031b4daae517eab911eec865ff0e92a4a"
+    },
+    {
+      "path": "70032192279fc0d348640dea13a6c7fe0d80b0e8.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/70032192279fc0d348640dea13a6c7fe0d80b0e8.css?meteor_css_resource=true",
+      "size": 50967,
+      "hash": "70032192279fc0d348640dea13a6c7fe0d80b0e8"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "size": 165742,
+      "hash": "5e3a1a9b72af1d842682f7e0a5c305922c583e3f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "size": 444379,
+      "hash": "2958ef6f1890fda3f47468dedc70c2e1b2dd9511"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "size": 165548,
+      "hash": "dbaed61bd8235d7e12522b21ce66fb90a4f9740d"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "size": 98024,
+      "hash": "951644ff8c02065fd58f609d142e45daaaa5370f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "size": 77160,
+      "hash": "a34ffd10b2a49d55d6247e351520ffdf556e0bb1"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "size": 134808,
+      "hash": "cd12480a6626f5faf89ddd7ebb00edf64059498d"
+    },
+    {
+      "path": "app/img/404.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/404.svg",
+      "size": 9457,
+      "hash": "a4458ccae34b0fe95faecf52f03fa1830eeec1e4"
+    },
+    {
+      "path": "app/img/bg-footer.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/bg-footer.svg",
+      "size": 61109,
+      "hash": "ec1fa7349123e2783d3173612f367158b05c61e6"
+    },
+    {
+      "path": "app/img/favicon.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/favicon.png",
+      "size": 4692,
+      "hash": "17e948552d5e5109acebcdb72f6a2fc18918778d"
+    },
+    {
+      "path": "app/img/logo-icon.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/logo-icon.png",
+      "size": 969,
+      "hash": "048d20692de0008c5e38bd7c3a80f778a01ad6ee"
+    },
+    {
+      "path": "app/img/logo.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/logo.png",
+      "size": 2270,
+      "hash": "f4169f0a6ec08e2844dcd04e1b5b864aee67832b"
+    },
+    {
+      "path": "app/img/no-avatar.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/img/no-avatar.png",
+      "size": 1787,
+      "hash": "073299914da4a908a9dd814417910a4a7a85d75b"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "57776cf2aefecbff212ab5d1622939958f63bf4e"
+    }
+  ]
+}
