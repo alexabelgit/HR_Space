@@ -1,0 +1,29 @@
+
+
+---------------Install meteor---------------
+
+- curl https://install.meteor.com/ | sh
+
+Create demo meteor app
+
+- cd ../
+
+- meteor create myapp
+
+Copy .meteor folder to HR_Space
+
+- cd /HR_Space
+
+- meteor npm i -g yarn
+- sudo meteor yarn install
+- meteor add jalik:ufs
+- meteor add accounts-base
+- meteor add aldeed:simple-schema
+- meteor add aldeed:collection2@3.0.0
+- meteor add alanning:roles
+- meteor add email
+- meteor add jalik:ufs-local
+- meteor add react-meteor-data
+- meteor add accounts-password
+
+- yarn start
