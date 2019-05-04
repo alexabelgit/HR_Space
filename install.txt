@@ -27,3 +27,9 @@ Copy .meteor folder to HR_Space
 - meteor add accounts-password
 
 - yarn start
+
+
+process.env.PORT = 3030
+process.env.MONGO_URL = "mongodb://localhost:27017/hr-space"
+process.env.ROOT_URL = "http://example.com"
+process.env.MAIL_URL = "smtp://8b5f5108fb9039d9da33570918f67da9:7e37636c6b839c4855232d0689941858@in-v3.mailjet.com:587/"

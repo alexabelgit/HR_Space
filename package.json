@@ -2,7 +2,7 @@
   "name": "hr-space",
   "private": true,
   "scripts": {
-    "start": "MAIL_URL=smtp://8b5f5108fb9039d9da33570918f67da9:7e37636c6b839c4855232d0689941858@in-v3.mailjet.com:587/ UPLOADFS_STORE_PATH=/home/petro/work/hr_space_uploads meteor --port 3030"
+    "start": "MONGO_URL=mongodb://localhost:27017/hr-space MAIL_URL=smtp://8b5f5108fb9039d9da33570918f67da9:7e37636c6b839c4855232d0689941858@in-v3.mailjet.com:587/ UPLOADFS_STORE_PATH=/home/petro/work/hr_space_uploads meteor --port 3030"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.3",
